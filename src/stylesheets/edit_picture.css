@@ -1,6 +1,6 @@
-/* .outer-container {
-   margin-bottom: 15px; 
-} */
+.outer-wrapper {
+    font-size: 17px;
+}
 
 .form-container {
     /* display: flex; 
