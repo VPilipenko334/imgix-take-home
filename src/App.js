@@ -1,9 +1,10 @@
 import './stylesheets/App.css';
+import EditPicture from './components/EditPicture';
 
 function App() {
   return (
     <div className="App">
-      <h1> React is working </h1>
+      <EditPicture />
     </div>
   );
 }
