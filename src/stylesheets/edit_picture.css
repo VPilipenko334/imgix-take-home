@@ -1,10 +1,17 @@
-.outer-container {
-    background-color: aliceblue;
-}
+/* .outer-container {
+   margin-bottom: 15px; 
+} */
 
 .form-container {
-    display: flex; 
+    /* display: flex; 
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     margin-bottom: 15px;
+}
+
+.submit-button {
+    /* display: flex; 
+    justify-content: center;
+    align-items: center; */
+    margin: auto; 
 }
