@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 
 const EditPicture = () => {
+    
     return (
         <div className="outer-container">
-            <div className="inner-container">
-                <h1>this works</h1>
-            </div>
+           <form className="form-container">
+                <input
+                    type="text"
+                    placeholder="Enter your Image URL" />
+           </form>
         </div>
     )
 }
