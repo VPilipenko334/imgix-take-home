@@ -10,6 +10,7 @@ const EditPicture = () => {
 
     const [backgroundColor, setBackgroundColor] = useState('bg-teal-50')
     const [formInput, setFormInput] = useState(data)
+    const [imagePreview, setImagePreview] = useState('')
     
     const handleBackgroundColorChange = (event) => {
         setBackgroundColor(event.target.value)
@@ -57,6 +58,10 @@ const EditPicture = () => {
                         type="text"
                         placeholder="Enter text" />
             </form>
+
+            <div className="image-preview">
+                <img src={imagePreview} />
+            </div>
 
             <button className="submit-button"
                         type="submit">
