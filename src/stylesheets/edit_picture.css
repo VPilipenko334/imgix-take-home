@@ -1,5 +1,17 @@
+* {
+    font-family: 'Maven Pro', sans-serif;
+}
+
 .outer-wrapper {
-    font-size: 17px;
+    font-size: 19px;
+}
+
+.inner-container {
+    margin-left: 15px;
+}
+
+#description {
+    width: 350px;
 }
 
 .form-container {
@@ -10,8 +22,6 @@
 }
 
 .submit-button {
-    /* display: flex; 
-    justify-content: center;
-    align-items: center; */
-    margin: auto; 
+    background-color: pink;
+    margin: 5px; 
 }
