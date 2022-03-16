@@ -46,78 +46,87 @@ const EditPicture = () => {
     return (
         <div className="outer-wrapper">
             <div className="outer-container">
-                 <div className={`h-screen ${backgroundColor}`} id="screen" >
-                    <div className="inner-left">
-                        <div className="inner-container">
-                            <h1>Welcome to our form:</h1>
-                            <br/>
-
-                            <p id="description">
-                            Please fill out all of the information below and you should 
-                            see immediate changes to your pictures on the right!     
-                            </p>
-
-                            <br/>
-
-                            Choose a background color:
-                            <br/>
-                            <select 
-                            value={backgroundColor}
-                            onChange={handleBackgroundColorChange} >
+                 <div className={`${backgroundColor}`} id="screen" >
                     
-                            <option value="bg-teal-50">Color A</option>
-                            <option value="bg-indigo-200">Color B</option>
-                            <option value="bg-purple-100">Color C</option>
-                            </select>
-                    <br/><br/>
-                
-                Choose a picture to edit:
-                <br/>
-                <select
-                value={formInput.ImageUrl}
-                onChange={updateUrl}
-                > 
-                    <option value="examples/butterfly">Butterfly</option>
-                    <option value="unsplash/bridge">Bridge</option>
-                    <option value="unsplash/pineneedles">Pine Needles</option>
-                    <option value="unsplash/motorbike">Motorbike</option>
-                    <option value="unsplash/mountains">Mountains</option>
-                </select>
-                <br/>
-                <br/>
-            Choose a color overlay:
-            <br/>
-                <form className="form-container">
-                        <input
-                            type="color"
-                            placeholder="Select your color"
-                            value={formInput.ImageColor}
-                            onChange={updateColor} />
-                </form>
+                        <div className="inner-left">
+                            <center>Welcome to our form:
+                                <br/>
+                                Created by: Veronika Pilipenko
+                            </center>
 
-            Enter text on the photo:
-            <br/>
-                <form className="form-container">
-                        <input
-                            type="text"
-                            placeholder="Write text here"
-                            value={formInput.ImageText}
-                            onChange={updateText} />
-                </form>
+                            <br/>
+                            <div className="form-container">
+                                <p id="description">
+                                Please fill out all of the information below and you should 
+                                see immediate changes to your pictures on the right!     
+                                </p>
 
-                </div>
+                                <br/>
+
+                                Choose a background color:
+                                <br/>
+                                <select 
+                                value={backgroundColor}
+                                onChange={handleBackgroundColorChange}
+                                className="dropdown" >
+                        
+                                <option value="bg-teal-50">Color A</option>
+                                <option value="bg-indigo-200">Color B</option>
+                                <option value="bg-purple-100">Color C</option>
+                                </select>
+                        <br/><br/>
+                <form className="form-container">
+                    Choose a picture to edit:
+                    <br/>
+                    <select
+                    value={formInput.ImageUrl}
+                    onChange={updateUrl}
+                    className="dropdown"
+                    > 
+                        <option value="examples/butterfly" className="dropdown-content">Butterfly</option>
+                        <option value="unsplash/bridge">Bridge</option>
+                        <option value="unsplash/pineneedles">Pine Needles</option>
+                        <option value="unsplash/motorbike">Motorbike</option>
+                        <option value="unsplash/mountains">Mountains</option>
+                    </select>
+                    <br/>
+                    <br/>
+                    Choose a color overlay:
+                    <br/>
+                        
+                            <input
+                                type="color"
+                                placeholder="Select your color"
+                                value={formInput.ImageColor}
+                                onChange={updateColor} 
+                                className="dropdown"/>
+                                    <br/><br/>
+                                    Enter text on the photo:
+                                    <br/>
+                            <input
+                                 type="text"
+                                 placeholder="Write text here"
+                                 value={formInput.ImageText}
+                                 onChange={updateText}
+                                 className="dropdown" />
+
+                    </form>
+
                
-                </div>
+                <br/>
 
-                <div className="inner-right">
-                    <div className="image-preview">
-                        <img src={imagePreview} />
-                        </div>
+                    </div>
+                
                     </div>
 
+                    <div className="inner-right">
+                        <div className="image-preview">
+                            <img src={imagePreview} />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
     )
 }
 
