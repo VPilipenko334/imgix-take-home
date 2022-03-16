@@ -63,16 +63,16 @@ const EditPicture = () => {
 
                                 <br/>
 
-                                Choose a background color:
+                                Choose form background color:
                                 <br/>
                                 <select 
                                 value={backgroundColor}
                                 onChange={handleBackgroundColorChange}
                                 className="dropdown" >
                         
-                                <option value="bg-teal-50">Color A</option>
-                                <option value="bg-indigo-200">Color B</option>
-                                <option value="bg-purple-100">Color C</option>
+                                <option value="bg-teal-50">Blue</option>
+                                <option value="bg-indigo-200">Purple</option>
+                                <option value="bg-purple-100">Pink</option>
                                 </select>
                         <br/><br/>
                 <form className="form-container">
