@@ -25,3 +25,13 @@
     background-color: pink;
     margin: 5px; 
 }
+
+/* .image-preview {
+    display: flex;
+
+} */
+
+#screen {
+    display: flex;
+    padding-top: 15px;
+}
