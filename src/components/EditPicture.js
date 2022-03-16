@@ -71,10 +71,12 @@ const EditPicture = () => {
                             </select>
                     <br/><br/>
                 
+                Choose a picture to edit:
+                <br/>
                 <select
                 value={formInput.ImageUrl}
                 onChange={updateUrl}
-                >
+                > 
                     <option value="examples/butterfly">Butterfly</option>
                     <option value="unsplash/bridge">Bridge</option>
                     <option value="unsplash/pineneedles">Pine Needles</option>
@@ -83,7 +85,8 @@ const EditPicture = () => {
                 </select>
                 <br/>
                 <br/>
-
+            Choose a color overlay:
+            <br/>
                 <form className="form-container">
                         <input
                             type="color"
@@ -92,11 +95,12 @@ const EditPicture = () => {
                             onChange={updateColor} />
                 </form>
 
-
+            Enter text on the photo:
+            <br/>
                 <form className="form-container">
                         <input
                             type="text"
-                            placeholder="Enter text"
+                            placeholder="Write text here"
                             value={formInput.ImageText}
                             onChange={updateText} />
                 </form>
